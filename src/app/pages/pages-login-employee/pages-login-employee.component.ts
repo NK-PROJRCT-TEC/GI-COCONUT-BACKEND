@@ -13,7 +13,7 @@ export class PagesLoginEmployeeComponent implements OnInit {
   constructor(private PagesLoginEmployeeService: PagesLoginEmployeeService, private router: Router) { }
 
   ngOnInit(): void {
-    this.employee_email = "employee@gmail.com";
+    this.employee_email = "admin@gmail.com";
     this.employee_password = "123456";
   }
   dashboard() {
