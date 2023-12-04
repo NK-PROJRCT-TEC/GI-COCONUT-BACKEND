@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">ฐานข้อมูลหลัก</h5>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center;" scope="col">ลำดับที่</th>
+                            <th style="text-align: center;" scope="col">รหัสตัวอย่าง</th>
+                            <th style="text-align: center;" scope="col">รูปลักษณ์</th>
+                            <th style="text-align: center;" scope="col">สัณฐานวิทยา</th>
+                            <th style="text-align: center;" scope="col">สัณฐานวิทยาของใบ</th>
+                            <th style="text-align: center;" scope="col">สัณฐานวิทยาของลำต้น</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of this.arr ;let i = index" [attr.data-index]="item.code_tree">
+                            <th style="text-align: center;"scope="row">{{i+1}}</th>
+                            <td style="text-align: center;">{{item.code_tree}}</td>
+                            <td style="text-align: center;"><button type="button" class="btn btn-warning"
+                                    (click)="func_into_report_fruit_appearance(item.code_tree)">รายละเอียด</button></td>
+                            <td style="text-align: center;"><button type="button" class="btn btn-warning"
+                                    (click)="func_into_report_inflorescence_and_flower_morphology(item.code_tree)">รายละเอียด</button></td>
+                            <td style="text-align: center;"><button type="button" class="btn btn-warning"
+                                    (click)="func_into_report_leaf_morphology(item.code_tree)">รายละเอียด</button></td>
+                            <td style="text-align: center;"><button type="button" class="btn btn-warning"
+                                    (click)="func_into_report_stem_morphology(item.code_tree)">รายละเอียด</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">สัณฐานวิทยาของใบ</h5>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center;" scope="col">ลำดับที่</th>
+                            <th style="text-align: center;" scope="col">รหัสตัวอย่าง</th>
+                            <th style="text-align: center;" scope="col">ความยาวของใบส่วนที่มีใบย่อย</th>
+                            <th style="text-align: center;" scope="col">ความยาว ก้านทางใบ</th>
+                            <th style="text-align: center;" scope="col">ขนาดก้านใบ ความหนา</th>
+                            <th style="text-align: center;" scope="col">ขนาดก้านใบ ความกว้าง</th>
+                            <th style="text-align: center;" scope="col">จำนวนใบย่อย ซ้าย</th>
+                            <th style="text-align: center;" scope="col">จำนวนใบย่อย ขวา</th>
+                            <th style="text-align: center;" scope="col">ขนาดของใบย่อย ความยาว</th>
+                            <th style="text-align: center;" scope="col">ขนาดของใบย่อย ความกว้าง</th>
+                            <th style="text-align: center;" scope="col">สีของก้านใบ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of this.arr ;let i = index" [attr.data-index]="item.code_tree">
+                            <th style="text-align: center;"scope="row">{{i+1}}</th>
+                            <td style="text-align: center;">{{item.code_tree}}</td>
+
+                            <td style="text-align: center;">{{item.length_of_the_leaf_with_leaflets}}</td>
+                            <td style="text-align: center;">{{item.length_foliar_stem}}</td>
+                            <td style="text-align: center;">{{item.petiole_thickness}}</td>
+                            <td style="text-align: center;">{{item.petiole_width}}</td>
+                            <td style="text-align: center;">{{item.number_of_left_leaves}}</td>
+                            <td style="text-align: center;">{{item.number_of_right_leaves}}</td>
+                            <td style="text-align: center;">{{item.length_of_leaflets}}</td>
+                            <td style="text-align: center;">{{item.width_of_leaflets}}</td>
+                            <td style="text-align: center;">{{item.color_of_leaf_petiole}}</td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

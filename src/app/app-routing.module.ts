@@ -35,6 +35,13 @@ import { PagesLanduseDetailComponent } from './pages/pages-landuse-detail/pages-
 import { PagesWaitingApproveLanduseComponent } from './pages/pages-waiting-approve-landuse/pages-waiting-approve-landuse.component';
 import { PagesLandInformationComponent } from './pages/pages-land-information/pages-land-information.component';
 import {PagesUserProfilePeopleComponent} from './pages/pages-user-profile-people/pages-user-profile-people.component'
+import {ReportGiCoconutComponent} from './pages/report-gi-coconut/report-gi-coconut.component'
+
+import {ReportFruitAppearanceComponent} from './pages/report-fruit-appearance/report-fruit-appearance.component'
+import {ReportInflorescenceAndFlowerMorphologyComponent} from './pages/report-inflorescence-and-flower-morphology/report-inflorescence-and-flower-morphology.component'
+import {ReportLeafMorphologyComponent} from './pages/report-leaf-morphology/report-leaf-morphology.component'
+import {ReportStemMorphologyComponent} from './pages/report-stem-morphology/report-stem-morphology.component'
+
 const routes: Routes = [
   { path: '', component: DashboardComponent },
   { path: 'dashboard', component: DashboardComponent },
@@ -72,9 +79,12 @@ const routes: Routes = [
   { path: 'pages-waiting-approve', component: PagesWaitingApproveLanduseComponent },
   { path: 'pages-land-information', component: PagesLandInformationComponent },
   { path: 'pages-user-profile-people',component:PagesUserProfilePeopleComponent},
+  { path: 'report-gi-coconut',component:ReportGiCoconutComponent},
   
-  
-  
+  { path: 'report-fruit-appearance',component:ReportFruitAppearanceComponent},
+  { path: 'report-inflorescence-and-flower-morphology',component:ReportInflorescenceAndFlowerMorphologyComponent},
+  { path: 'report-leaf-morphology',component:ReportLeafMorphologyComponent},
+  { path: 'report-stem-morphology',component:ReportStemMorphologyComponent},
 ];
 
 @NgModule({

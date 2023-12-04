@@ -53,6 +53,11 @@ import { PagesLanduseDetailComponent } from './pages/pages-landuse-detail/pages-
 import { PagesWaitingApproveLanduseComponent } from './pages/pages-waiting-approve-landuse/pages-waiting-approve-landuse.component'
 import { PagesLandInformationComponent } from './pages/pages-land-information/pages-land-information.component';
 import { PagesUserProfilePeopleComponent } from './pages/pages-user-profile-people/pages-user-profile-people.component';
+import { ReportGiCoconutComponent } from './pages/report-gi-coconut/report-gi-coconut.component';
+import { ReportFruitAppearanceComponent } from './pages/report-fruit-appearance/report-fruit-appearance.component';
+import { ReportInflorescenceAndFlowerMorphologyComponent } from './pages/report-inflorescence-and-flower-morphology/report-inflorescence-and-flower-morphology.component';
+import { ReportLeafMorphologyComponent } from './pages/report-leaf-morphology/report-leaf-morphology.component';
+import { ReportStemMorphologyComponent } from './pages/report-stem-morphology/report-stem-morphology.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -95,6 +100,11 @@ import { PagesUserProfilePeopleComponent } from './pages/pages-user-profile-peop
     PagesLandInformationComponent,
     SidebarComponent,
     PagesUserProfilePeopleComponent,
+    ReportGiCoconutComponent,
+    ReportFruitAppearanceComponent,
+    ReportInflorescenceAndFlowerMorphologyComponent,
+    ReportLeafMorphologyComponent,
+    ReportStemMorphologyComponent,
   ],
   imports: [
     BrowserModule,

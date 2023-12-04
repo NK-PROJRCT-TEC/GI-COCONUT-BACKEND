@@ -1,5 +1,3 @@
-
-/* font THSARABUN */
 @font-face {
     font-family: "THSarabunNew";
 
@@ -20,9 +18,14 @@ select,
 input,
 text,
 textarea,
-span,
+th,td,
 button {
     font-family: THSarabunNew;
     font-size: 20px;
     font-weight: bold;
+}
+th,
+td,
+button{
+    font-size: 1.0vw;
 }

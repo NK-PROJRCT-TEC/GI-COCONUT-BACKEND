@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">รูปลักษณ์</h5>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center;" scope="col">ลำดับที่</th>
+                            <th style="text-align: center;" scope="col">รหัสตัวอย่าง</th>
+                            <th style="text-align: center;" scope="col">ขนาดเส้นรอบลูกมะพร้าว(แนวดิ่ง)</th>
+                            <th style="text-align: center;" scope="col">ขนาดเส้นรอบลูกมะพร้าว(แนวขวาง)</th>
+                            <th style="text-align: center;" scope="col">ขนาดลูกมะพร้าว ความยาว</th>
+                            <th style="text-align: center;" scope="col">ขนาดลูกมะพร้าว ความกว้าง</th>
+                            <th style="text-align: center;" scope="col">น้ำหนักผล</th>
+                            <th style="text-align: center;" scope="col">น้ำหนักผลปอกเปลือก</th>
+                            <th style="text-align: center;" scope="col">น้ำหนักเปลือก</th>
+                            <th style="text-align: center;" scope="col">น้ำหนักกะลา</th>
+                            <th style="text-align: center;" scope="col">น้ำหนัก เนื้อมะพร้าวสด</th>
+                            <th style="text-align: center;" scope="col">น้ำหนักน้ำ</th>
+                            <th style="text-align: center;" scope="col">ความหนาเปลือก</th>
+                            <th style="text-align: center;" scope="col">ความหนาเนื้อ</th>
+                            <th style="text-align: center;" scope="col">ความหนากะลา</th>
+                            <th style="text-align: center;" scope="col">ความหวาน</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of this.arr ;let i = index" [attr.data-index]="item.code_tree">
+                            <th style="text-align: center;"scope="row">{{i+1}}</th>
+                            <td style="text-align: center;">{{item.code_tree}}</td>
+                            <td style="text-align: center;">{{item.order_fruit}}</td>
+
+                            <td style="text-align: center;">{{item.vertical_circumference_size_of_coconut}}</td>
+                            <td style="text-align: center;">{{item.horizontal_circumference_size_of_coconut}}</td>
+                            <td style="text-align: center;">{{item.coconut_fruit_length_size}}</td>
+                            <td style="text-align: center;">{{item.coconut_fruit_width_size}}</td>
+                            <td style="text-align: center;">{{item.fruit_weight}}</td>
+                            <td style="text-align: center;">{{item.fruit_peel_weight}}</td>
+                            <td style="text-align: center;">{{item.shell_weight}}</td>
+                            <td style="text-align: center;">{{item.husk_weight}}</td>
+                            <td style="text-align: center;">{{item.fresh_coconut_flesh_weight}}</td>
+                            <td style="text-align: center;">{{item.coconut_water_weight}}</td>
+                            <td style="text-align: center;">{{item.coconut_shell_thickness}}</td>
+                            <td style="text-align: center;">{{item.coconut_flesh_thickness}}</td>
+                            <td style="text-align: center;">{{item.coconut_husk_thickness}}</td>
+                            <td style="text-align: center;">{{item.coconut_water_sweetness}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
