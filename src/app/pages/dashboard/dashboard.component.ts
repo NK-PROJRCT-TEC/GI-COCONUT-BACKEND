@@ -25,7 +25,7 @@ export class DashboardComponent implements OnInit {
     this.password = localStorage.getItem("password");
     console.log(this.username);
     if (this.username == null) {
-      this.router.navigate(['pages-login']);
+      this.router.navigate(['pages-login-employee']);
     }
   }
   

@@ -76,11 +76,16 @@
             <span style="font-weight:bold;">บันทึกคำร้องขออนุมัติ</span> </a>
       </li>
       <li class="nav-item" *ngIf="is_people == false"> <a class="nav-link collapsed" routerLink="/pending-status"> <i
-               class="bi bi-journal-text"></i> <span style="font-weight:bold;">สถานะคำร้องขออนุมัติการสมัคร</span> </a></li>
-      <li class="nav-item" *ngIf="is_people == false"> <a class="nav-link collapsed" routerLink="/pending-landuse-status"> <i
-               class="bi bi-journal-text"></i> <span style="font-weight:bold;">สถานะคำร้องขอขึ้นทะเบียน</span> </a></li>
+               class="bi bi-journal-text"></i> <span style="font-weight:bold;">สถานะคำร้องขออนุมัติการสมัคร</span> </a>
+      </li>
+      <li class="nav-item" *ngIf="is_people == false"> <a class="nav-link collapsed"
+            routerLink="/pending-landuse-status"> <i class="bi bi-journal-text"></i> <span
+               style="font-weight:bold;">สถานะคำร้องขอขึ้นทะเบียน</span> </a></li>
       <li class="nav-item" *ngIf="is_people == true "> <a class="nav-link collapsed"
             routerLink="/pages-waiting-approve-landuse"> <i class="bi bi-journal-text"></i>
             <span style="font-weight:bold;">สถานะคำร้องขอขึ้นทะเบียน</span> </a></li>
+      <li class="nav-item" > <a class="nav-link collapsed"
+            routerLink="/report-gi-coconut"> <i class="bi bi-journal-text"></i>
+            <span style="font-weight:bold;">หน้ารายงาน</span> </a></li>
    </ul>
 </aside>
